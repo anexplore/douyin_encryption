@@ -40,7 +40,7 @@ public class DouYin_test {
 			char[] asStr = md5.substring(0, 8).toCharArray();
 			char[] cpStr = md5.substring(md5.length()-8).toCharArray();
 			StringBuffer assb = new StringBuffer(urls);
-			assb=assb.append("&as=a2");
+			assb=assb.append("&as=a1");
 			for(int i=0;i<8;i++){
 				assb=assb.append(asStr[i]).append(time1[i]);
 			}
@@ -48,7 +48,7 @@ public class DouYin_test {
 			for(int i=0;i<8;i++){
 				assb=assb.append(time2[i]).append(cpStr[i]);
 			}
-			assb = assb.append("e2");
+			assb = assb.append("e1");
 			return assb.toString();
 		}else{
 			throw new RuntimeException("url is wrong");
