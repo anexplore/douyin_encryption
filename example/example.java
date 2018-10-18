@@ -18,7 +18,7 @@ public class DouYin_test {
 		String[] splitStrs = url.split("&");
 		if(splitStrs!=null&&splitStrs.length>0){
 			Map<String,String> map = new HashMap<String,String>();
-			map.put("s", "xxxxxxxx");
+			map.put("rstr", "xxxxxxxx");
 			for(String splitStr:splitStrs){
 				String[] keyAndValue = splitStr.split("=");
 				if(keyAndValue!=null&&keyAndValue.length==2){
