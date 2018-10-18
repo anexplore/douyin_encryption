@@ -10,9 +10,9 @@ public class DouYin_test {
 		System.out.println(urlStr);
 	}
 	
-	public static String retrunAcAnd(String urls,String contactInfo){
+	public static String retrunAcAnd(String urls,String xxx){
 		String url =urls.indexOf("?")>-1?urls.substring(urls.indexOf("?")+1):urls;
-		if (contactInfo!=null) {
+		if (xxx!=null) {
 			url = url + "&contact="+contactInfo;
 		}
 		String[] splitStrs = url.split("&");
